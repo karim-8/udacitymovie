@@ -1,2 +1,2 @@
 # udacitymovie
-movie app
+movie app for udacity.
