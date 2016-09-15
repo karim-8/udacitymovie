@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid_movies"
+        android:numColumns="2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/errortextview"
+        android:text="No internet Connection , click here to try Again"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

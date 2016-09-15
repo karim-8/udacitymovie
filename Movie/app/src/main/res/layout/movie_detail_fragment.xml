@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MovieDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#009688"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="GoodFEllas"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <View
+            android:id="@+id/horizontal_line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="5dp"
+            android:background="#181717" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="1990-09-12" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_release_date"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="8.30" />
+
+        <ImageButton
+            android:id="@+id/favouriteButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_rate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+             android:background="@null"
+            android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/imageView"
+            android:onClick="markAsFavourite" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:text="Images add
+        much-needed context and visual
+         flair to Android applications.
+          Picasso allows for hassle-free image loading
+         in your application—often in one line of code!"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+        <View
+            android:id="@+id/horizontal_line_3"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_overview"
+            android:layout_marginTop="5dp"
+            android:background="#181717" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_overview" />
+
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_review"
+            android:layout_marginTop="5dp"
+            android:background="#181717" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_trailer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/horizontal_line"
+            android:text="Traillers"
+            android:textSize="20sp" />
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/list_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trailer_title" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movie App</string>
+
+    <string-array name="sorting_arrays">
+        <item>popular</item>
+        <item>rating</item>
+
+    </string-array>
+</resources>
